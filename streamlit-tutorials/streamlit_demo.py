@@ -36,3 +36,11 @@ st.write(nd)
 st.line_chart(df)
 st.bar_chart(df)
 st.area_chart(df)
+
+# altair_chart
+chart = alt.Chart(df).mark_circle().encode(x = 'a', y = 'b',tooltip = ['a','b'])
+st.altair_chart(chart, use_container_width=True)
+
+# media 
+st.image("ak icon.jpg", width=300)
+st.video("https://youtu.be/5XnHlluw-Eo")  
