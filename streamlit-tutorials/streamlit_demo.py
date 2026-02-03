@@ -60,3 +60,17 @@ st.write(address)
 # 4. date and time
 st.date_input("Date")
 st.time_input("Time")
+
+# 5. checkbox
+if st.checkbox("Show dataframe"):
+    st.write("Thanks for checking the dataframe part")
+
+# 6. radio
+st.radio("Choose a number", ("1","2","3"))
+
+# 7. selectbox
+st.selectbox("Select a number", ("1","2","3"))
+
+# 8.multiselect
+v3 = st.multiselect("Select a number", ("1","2","3"))
+st.write(v3)
