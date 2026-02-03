@@ -74,3 +74,29 @@ st.selectbox("Select a number", ("1","2","3"))
 # 8.multiselect
 v3 = st.multiselect("Select a number", ("1","2","3"))
 st.write(v3)
+
+# 9.slider
+st.slider("Select a number", 1, 10)
+
+# 10.number_input
+st.number_input("Select a number", 1, 10)
+
+# 11.upload_file
+img = st.file_uploader("Upload a file")
+#st.image(img)
+
+# 12.progress
+progress = st.progress(0)
+for i in range(100):
+    time.sleep(0.1)
+    progress.progress(i+1)
+
+# 13.sidebar
+#st.sidebar.selectbox("Select a number", [1,2,3,4,5])
+
+# 14. navigation bar
+rad = st.sidebar.radio("Navigation", ("Home", "About", "Careers", "Contact"))
+if rad == "About":
+    st.write("This is about us")
+if rad == "Careers":
+    st.write("You clicked on the careers page.")
