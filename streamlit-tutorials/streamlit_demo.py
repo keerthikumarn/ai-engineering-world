@@ -43,4 +43,20 @@ st.altair_chart(chart, use_container_width=True)
 
 # media 
 st.image("ak icon.jpg", width=300)
-st.video("https://youtu.be/5XnHlluw-Eo")  
+st.video("https://youtu.be/5XnHlluw-Eo")
+
+# Widgets - buttons
+if st.button("Click me"):
+    st.text("You clicked me")
+
+# 2.Textinput
+name = st.text_input("Name")
+st.write(name)
+
+# 3.textarea
+address = st.text_area("Address")
+st.write(address)
+
+# 4. date and time
+st.date_input("Date")
+st.time_input("Time")
